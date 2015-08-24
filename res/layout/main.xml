@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="1.显示通知栏" />
+
+        <Button
+            android:id="@+id/btn_bigstyle_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="2.显示大视图风格通知栏（4.1以上才生效）" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button 
+                android:id="@+id/btn_biginbox_style_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:text="InboxStyle"/>
+            
+            <Button 
+                android:id="@+id/btn_bigpicture_style_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:text="BigPictureStyle"/>
+            
+            <Button 
+                android:id="@+id/btn_bigtext_style_show"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:text="BigTextStyle"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_show_cz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="3.显示常驻通知栏" />
+
+        <Button
+            android:id="@+id/btn_show_intent_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="4.显示通知，点击跳转到指定Activity" />
+
+        <Button
+            android:id="@+id/btn_show_intent_apk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="5.显示通知，点击打开APK" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="6.清除指定通知" />
+
+        <Button
+            android:id="@+id/btn_clear_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="7.清除所有通知" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_show_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="left|center_vertical"
+        android:text="8.显示自定义通知栏" />
+
+    <Button
+        android:id="@+id/btn_show_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="9.显示带进度条通知栏" />
+
+</LinearLayout>
